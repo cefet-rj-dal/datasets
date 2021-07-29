@@ -166,4 +166,11 @@ for (i in 2010:2020) {
   saveRDS(cargas,file=sprintf("/data/antaq/cargas-%d.rds", i))
 }
 
+if (FALSE) {
+	cargas <- NULL
+	for (i in (2010:2020)) {
+	  cargas <- rbind(cargas, readRDS(sprintf("C:/Users/eduar/OneDrive/Git/datasets/navigations/cargas-%d.rds", i)))
+	}
+}
+
 
