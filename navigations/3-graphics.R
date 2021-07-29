@@ -5,6 +5,10 @@ loadlibrary("reshape")
 loadlibrary("RColorBrewer")
 source("https://raw.githubusercontent.com/eogasawara/mylibrary/master/myGraphic.R")
 
+#configure a pasta onde estão os dados
+setwd("C:/Users/eduar/OneDrive/Git/datasets/navigations")
+atracacoes_mes <- readRDS("atracacoes_mes.rds")
+
 
 colors <- brewer.pal(11, 'Spectral')
 # setting the font size for all charts
